@@ -6,6 +6,8 @@ module.exports = {
     'vue/setup-compiler-macros': true,
   },
   extends: [
+    'airbnb-base',
+    'airbnb-typescript/base',
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
   ],
@@ -13,15 +15,16 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.eslint.json',
     ecmaVersion: 'latest',
-    ecmaFeatures: {
-      jsx: true,
-    },
+    // ecmaFeatures: {
+    //   jsx: true,
+    // },
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
     extraFileExtensions: ['.vue'],
   },
   plugins: ['vue', '@typescript-eslint', 'eslint-plugin-import'],
   rules: {
+    'import/extensions': 0, // use typescript resolver, doesn't need this rule
     'vue/comment-directive': 0,
     'vue/script-setup-uses-vars': 'error',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],

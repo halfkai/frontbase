@@ -2,11 +2,7 @@
 </script>
 
 <template>
-  <header />
-  <main>
-    <router-view />
-  </main>
-  <footer />
+  <router-view />
 </template>
 
 <style>

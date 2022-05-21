@@ -24,6 +24,7 @@ module.exports = {
   },
   plugins: ['vue', '@typescript-eslint', 'eslint-plugin-import'],
   rules: {
+    'import/no-unresolved': 0,
     'import/extensions': 0, // use typescript resolver, doesn't need this rule
     'vue/comment-directive': 0,
     'vue/script-setup-uses-vars': 'error',

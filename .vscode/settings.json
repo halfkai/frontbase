@@ -9,5 +9,6 @@
   "vetur.validation.script": false,
   "vetur.validation.interpolation": false,
   "vetur.validation.template": false,
-  "vetur.validation.style": false
+  "vetur.validation.style": false,
+  "javascript.validate.enable": false
 }

@@ -26,8 +26,9 @@ module.exports = {
   rules: {
     'import/no-unresolved': 0,
     'import/extensions': 0, // use typescript resolver, doesn't need this rule
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'vue/comment-directive': 0,
     'vue/script-setup-uses-vars': 'error',
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'vue/multi-word-component-names': 0,
   },
 };

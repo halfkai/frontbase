@@ -15,6 +15,7 @@
     "skipLibCheck": true,
     "outDir": "dist",
     "declaration": false,
+    "types": ["vite/client", "@intlify/vite-plugin-vue-i18n/client"],
     "paths": {
       "@/*": ["src/*"]
     }

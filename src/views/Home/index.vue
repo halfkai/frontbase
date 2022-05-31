@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div>
+  <div text="dark-500 xl">
     Home, {{ $t('Hi') }}
   </div>
 </template>

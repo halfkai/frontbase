@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue';
 import legacy from '@vitejs/plugin-legacy';
 import { resolve } from 'path';
 import Unocss from 'unocss/vite';
-import { presetAttributify, presetUno } from 'unocss';
+import { presetAttributify, presetWind } from 'unocss';
 import vueI18n from '@intlify/vite-plugin-vue-i18n';
 // import { createStyleImportPlugin, AndDesignVueResolve } from 'vite-plugin-style-import';
 
@@ -21,8 +21,8 @@ export default defineConfig({
     }),
     Unocss({
       presets: [
-        presetUno(),
         presetAttributify(),
+        presetWind(),
       ],
     }),
     vueI18n({

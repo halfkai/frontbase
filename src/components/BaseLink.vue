@@ -14,10 +14,7 @@ const props = defineProps<Props>();
     <SvgIcon
       v-if="props.icon"
       :id="props.icon"
-      w-1em
-      h-1em
-      inline-block
-      align-sub
+      class="w-1em h-1em inline-block align-sub"
     />
     <span>{{ content }}</span>
   </a>

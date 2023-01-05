@@ -26,4 +26,4 @@ dist-ssr
 
 # Yarn 2
 .pnp.*
-.yarn/*
+.yarn

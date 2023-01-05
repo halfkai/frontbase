@@ -6,10 +6,10 @@ interface Props {
   id: string
 }
 const props = withDefaults(defineProps<Props>(), {
-  fileUrl: '/icons.svg',
+  fileUrl: 'icons.svg',
 });
 
-const imgURL = computed(() => new URL(`${props.fileUrl}#${props.id}`, import.meta.url).href);
+const imgURL = computed(() => `${props.fileUrl}#${props.id}`);
 </script>
 
 <template>

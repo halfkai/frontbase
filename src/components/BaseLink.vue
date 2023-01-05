@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SvgIcon from './SvgIcon.vue';
+import BaseIcon from './BaseIcon.vue';
 
 interface Props {
   icon?: string
@@ -11,7 +11,7 @@ const props = defineProps<Props>();
 
 <template>
   <a>
-    <SvgIcon
+    <BaseIcon
       v-if="props.icon"
       :id="props.icon"
       class="w-1em h-1em inline-block align-sub"
